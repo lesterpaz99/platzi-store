@@ -9,6 +9,13 @@ git:
   depth: 3
 script:
   - yarn build
+notifications:
+  email:
+    recipients:
+      - lesterpaz99@gmail.com
+      - 1180268@usap.edu
+    on_success: always
+    on_failure: always
 deploy:
   provider: pages
   skip_cleanup: true
